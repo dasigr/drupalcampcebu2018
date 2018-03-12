@@ -1,0 +1,6 @@
+body {
+  background: #cd8538; }
+
+@media (min-width: 500px) {
+  body {
+    background: #fff; } }

@@ -1,0 +1,108 @@
+/* Fonts. */
+/* Colors. */
+/* Background colors. */
+/* Base font size. */
+/* Convert pixels to ems. */
+/* SASS file for global changes. */
+h1, h2, h3, h4, h5 {
+  font-family: Merriweather, serif; }
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold; }
+
+p {
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 20px; }
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.75em; } }
+
+/* SASS file for form. */
+form {
+  font-family: Open Sans, sans-serif; }
+  form .form-wrapper {
+    padding-left: 0;
+    padding-right: 0; }
+    form .form-wrapper .col-xs-8,
+    form .form-wrapper .col-xs-4 {
+      padding-left: 0;
+      padding-right: 0; }
+    form .form-wrapper .col-xs-8 {
+      text-align: left; }
+    form .form-wrapper .input-text {
+      font-size: 16px;
+      border: 1px solid #b97a47;
+      padding: 6px;
+      width: 95%; }
+    form .form-wrapper .submit-btn {
+      font-size: 16px;
+      background: #b47b31;
+      color: #ffffff;
+      border: none;
+      padding: 7px;
+      width: 100%; }
+    form .form-wrapper .submit-btn:hover {
+      background-color: #b07337;
+      color: #000; }
+
+/* SASS file for header. */
+header .logo {
+  text-align: center;
+  margin-top: 40px; }
+  header .logo img {
+    height: 350px; }
+
+header .description {
+  margin-top: 40px; }
+
+@media (min-width: 640px) {
+  header .logo img {
+    height: 400px; }
+  header .description p {
+    font-size: 18px; } }
+
+@media (min-width: 768px) {
+  header .logo img {
+    height: 500px; }
+  header h1 {
+    font-size: 43px; }
+  header .description p {
+    font-size: 22px; }
+  header .description .input-text {
+    font-size: 15px;
+    padding: 8px; }
+  header .description .submit-btn {
+    font-size: 15px;
+    padding: 9px; } }
+
+@media (min-width: 900px) {
+  header .logo img {
+    height: 550px; }
+  header h1 {
+    font-size: 50px; }
+  header .description p {
+    font-size: 25px; }
+  header .description .input-text {
+    font-size: 18px; }
+  header .description .submit-btn {
+    font-size: 18px; } }
+
+@media (min-width: 1024px) {
+  header .logo img {
+    height: 600px; }
+  header h1 {
+    font-size: 60px; }
+  header .description p {
+    font-size: 25px; }
+  header .description .input-text {
+    font-size: 20px;
+    padding: 10px; }
+  header .description .submit-btn {
+    font-size: 20px;
+    padding: 11px; } }

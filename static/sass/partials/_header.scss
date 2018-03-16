@@ -1,0 +1,88 @@
+/* SASS file for header. */
+header {
+  .logo {
+    text-align: center;
+    margin-top: 40px;
+    img {
+      height: 350px;
+    }
+  }
+  .description {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 640px) {
+  header {
+    .logo img{
+        height: 400px;
+      }
+      .description p{
+        font-size: 18px;
+      }
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    .logo img{
+        height: 500px;
+      }
+      h1{
+        font-size: 43px;
+      }
+    .description p{
+      font-size: 22px;
+    }
+    .description .input-text {
+      font-size: 15px;
+      padding: 8px;
+    }
+    .description .submit-btn{
+      font-size: 15px;
+      padding: 9px;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    .logo img{
+        height: 550px;
+      }
+    h1{
+      font-size: 50px;
+    }
+    .description p{
+      font-size: 25px;
+    }
+    .description .input-text {
+      font-size: 18px;
+    }
+    .description .submit-btn{
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    .logo img{
+        height: 600px;
+      }
+      h1{
+        font-size: 60px;
+      }
+    .description p{
+      font-size: 25px;
+    }
+    .description .input-text {
+      font-size: 20px;
+      padding: 10px;
+    }
+    .description .submit-btn{
+      font-size: 20px;
+      padding: 11px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 /* Fonts. */
 /* Colors. */
 /* Background colors. */
+/*Hover color */
 /* Base font size. */
 /* Convert pixels to ems. */
 /* SASS file for global changes. */
@@ -42,7 +43,7 @@ form {
       width: 95%; }
     form .form-wrapper .submit-btn {
       font-size: 16px;
-      background: #b47b31;
+      background: #b97a47;
       color: #ffffff;
       border: none;
       padding: 7px;

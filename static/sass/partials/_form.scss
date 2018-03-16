@@ -20,15 +20,15 @@ form {
     }
     .submit-btn {
       font-size: $base-font-size;
-      background: #b47b31;
+      background: $secondary-color;
       color: $primary-bg;
       border: none;
       padding: 7px;
       width: 100%;
     }
     .submit-btn:hover {
-      background-color: #b07337;
-      color: #000;
+      background-color: $submit-btn-hover;
+      color: $submit-font-color;
     }
   }
 }

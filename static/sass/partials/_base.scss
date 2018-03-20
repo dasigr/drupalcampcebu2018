@@ -1,26 +1,27 @@
-/* Fonts. */
+// Fonts.
 $title-font: Merriweather, serif;
 $text-font: Open Sans, sans-serif;
 
-/* Colors. */
+// Colors.
 $primary-color: #39aade;
 $secondary-color: #cd853f;
 $tertiary-color: #323648;
 
-/* Background colors. */
+// Background colors.
 $primary-bg: #fff;
 $secondary-bg: #f5f5f5;
 
-/* Hover color. */
+// Hover color.
 $submit-btn-hover: #b07337;
 $submit-font-color: #000;
 
-/* Border bottom color. */
+// Border bottom color.
 $border-btn-color: #e6e6fa;
 
-/* Base font size. */
+// Base font size.
 $base-font-size: 16px;
-/* Convert pixels to ems. */
+
+// Convert pixels to ems.
 @function pxtoem($target, $context: $base-font-size) {
   @return ($target/$context)+0em;
 }

@@ -1,103 +1,120 @@
-/* SASS file for header. */
+// SASS file for header.
 header {
-	/*Sitename and menu.*/
+	// Sitename and menu.
 	.sitename-wrapper {
+		border-bottom: 0.2px solid $border-btn-color;
 		.desktop-menu {
 			display: none;
 		}
-		border-bottom: 0.2px solid $border-btn-color;
-			.text-logo {
-				text-transform: uppercase;
-				text-align: left;
-				margin: 15px 0 22px 0;
-				font-family: $text-font;
-				padding-top: 4px;
-				margin-left: 5px;
-					a {
-						font-size: 28px;
-						font-weight: bold;
-						color: $primary-color;
-						text-decoration: none;
-					}
-				.text-logo-second {
-					color: $secondary-color;padding: 0;
+
+		.text-logo {
+			text-transform: uppercase;
+			text-align: left;
+			margin: 15px 0 22px 0;
+			font-family: $text-font;
+			padding-top: 4px;
+			margin-left: 5px;
+				a {
+					font-size: 28px;
+					font-weight: bold;
+					color: $primary-color;
+					text-decoration: none;
 				}
+			.text-logo-second {
+				color: $secondary-color;padding: 0;
 			}
+		}
+
 		span {
 			margin-top: 17px;
 			padding-left: 27px;
 		}
+
 		.menu-wrapper {
-			text-transform: uppercase;
-	    height: 100%;
-	    width: 0;
-	    position: fixed;
-	    z-index: 1;
-	    top: 0;
-	    right: 0;
-	    background-color:$primary-color;
-	    overflow-x: hidden;
-	    transition: 0.5s;
-	    padding-top: 0px;
-	    text-align:center;
-	    	.close-button  {
-	    		font-size: 45px;
-	    		float: right;
-	    		padding: 0px;
-    			a {
-    				text-decoration: none;
-						color: $primary-bg;
-    			}
-	    	}
-				ul.menu-list {
-					list-style-type: none;
-					display: block;
-					font-size: 25px;
-					text-align: left;
-					padding: 0px;
-	   		 	margin-bottom: 0;
-	    		width: 100%;
-	    		text-transform: capitalize;
-						a {
-					    text-decoration: none;
-							color: $primary-bg;
-							font-family: $text-font;
-							display: block;
-							padding: 7px;
-							padding-left: 40px;
-							padding-bottom: 10px;
-						}
-						a:hover {
-							color: $primary-bg;
-						}
-					li {
-						border-bottom: 1px solid rgba(255, 255, 255,0.2);
-					}
-					li:hover {
-						background-color: rgba(255, 255, 255,0.2);
-					}	
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			right: 0;
+			background-color:$primary-color;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 0px;
+			text-align:center;
+			.close-button  {
+				font-size: 45px;
+				float: right;
+				padding: 0px;
+				a {
+					text-decoration: none;
+					color: $primary-bg;
 				}
-					.register-button {
-						text-transform: capitalize;
-							a {
-								font-size: 25px;
-								font-family: $text-font;
-								color: $primary-bg;
-								text-decoration: none;
-								border: 1px solid $primary-bg;
-								background-color: $secondary-color;
-								padding: 8px;
-	    					padding-right: 60px;
-	    					padding-left: 60px;
-	    					border-color: $secondary-color;
-							}
-							a:hover {
-								color:$primary-bg;
-								background-color: $submit-btn-hover;
-							}
-					}
 			}
+
+			ul.menu-list {
+				list-style-type: none;
+				display: block;
+				font-size: 25px;
+				text-align: left;
+				padding: 0px;
+				margin-top: 80px;
+				margin-bottom: 0;
+				width: 100%;
+				text-transform: capitalize;
+				a {
+					text-decoration: none;
+					color: $primary-bg;
+					font-family: $text-font;
+					display: block;
+					padding: 7px;
+					padding-left: 40px;
+					padding-bottom: 10px;
+				}
+
+				a:hover {
+					color: $primary-bg;
+				}
+
+				li {
+					border-bottom: 1px solid rgba(255, 255, 255,0.2);
+				}
+
+				li:hover {
+					background-color: rgba(255, 255, 255,0.2);
+				}	
+			}
+
+			.register-button {
+				text-transform: capitalize;
+				a {
+					font-size: 25px;
+					font-family: $text-font;
+					color: $primary-bg;
+					text-decoration: none;
+					border: 1px solid $primary-bg;
+					background-color: $secondary-color;
+					padding: 8px;
+					padding-right: 60px;
+					padding-left: 60px;
+					border-color: $secondary-color;
+				}
+
+				a:hover {
+					color:$primary-bg;
+					background-color: $submit-btn-hover;
+				}
+			}
+		}
+
+		.mobile-menu{
+			width: 100%;
+			span.hamburger{
+				float: right;
+			}
+		}
 	}
+
   .logo {
     text-align: center;
     margin-top: 40px;
@@ -105,37 +122,43 @@ header {
       height: 350px;
     }
   }
+
   .description {	
     margin-top: 40px;
   }
 }
 
+// Mobile landscape display.
 @media (min-width: 640px) {
   header {
   	.sitename-wrapper {
   		.desktop-menu{
   			display: none;
   		}
-  		span{
+  		span {
   			padding-left: 40px;
   		}
   	}
-  	.hamburger{
-  		padding-left: 40px;
-  	}
 
-    .logo img{
-        height: 400px;
-      }
-      .description p{
-        font-size: 18px;
-      }
+    .logo img {
+      height: 400px;
+    }
+
+    .description p {
+      font-size: 18px;
+    }
   }
 }
 
+// Tablet portrait display.
 @media (min-width: 768px) {
   header {
   	.sitename-wrapper {
+  		.menu-wrapper{
+  			.close-button{
+  				padding-left: 30px;
+  			}
+  		}
   		.desktop-menu {
   			display: none;
   		}
@@ -143,97 +166,110 @@ header {
   			padding-left: 60px;
   		}
   	}
-    .logo img{
-        height: 500px;
-      }
-      h1{
-        font-size: 43px;
-      }
-    .description p{
+
+    .logo img {
+      height: 500px;
+    }
+
+    h1 {
+      font-size: 43px;
+    }
+
+    .description p {
       font-size: 22px;
     }
+
     .description .input-text {
       font-size: 15px;
       padding: 8px;
     }
-    .description .submit-btn{
+
+    .description .submit-btn {
       font-size: 15px;
       padding: 9px;
     }
   }
 }
 
+// Tablet landscape display.
 @media (min-width: 992px) {
   header {
   	.sitename-wrapper {
   		.mobile-menu {
   			display: none;
   		}
+
   		.desktop-menu {
-  			display: block;
-	  			ul.menu-list {
-	  				list-style-type: none;
-	  				text-transform: capitalize;
-	  				float: right;
-	  					li {
-	  						display: inline-block;
-	  						padding-right: 30px;
-	  						padding-top: 27PX;
-	  						a {
-	  							font-family: $text-font;
-	  							color:$tertiary-color;
-	  							font-size: 19px; 	
-	  						}
-		  						a:hover {
-		  							text-decoration: none;
-		  							color: $secondary-color;
-		  						}
-	  					}
-	  				li.register-button {
-	  					border: 0.5px solid $secondary-color;
-	  					text-align: center;
-	  					padding: 10px;
-    					padding-right: 15px;
-    					padding-left: 15px
-	  				}
-	  			}
+				display: block;
+				ul.menu-list {
+					list-style-type: none;
+					text-transform: capitalize;
+					float: right;
+					li {
+						display: inline-block;
+						padding-right: 30px;
+						padding-top: 27PX;
+						a {
+							font-family: $text-font;
+							color:$tertiary-color;
+							font-size: 19px; 	
+						}
+						a:hover {
+							text-decoration: none;
+							color: $secondary-color;
+						}
+					}
+
+					li.register-button {
+						border: 0.5px solid $secondary-color;
+						text-align: center;
+						padding: 10px;
+						padding-right: 15px;
+						padding-left: 15px
+					}
+				}
   		}
   	}
 
-    .logo img{
-        height: 550px;
-      }
-    h1{
+    .logo img {
+      height: 550px;
+    }
+
+    h1 {
       font-size: 50px;
     }
-    .description p{
+
+    .description p {
       font-size: 25px;
     }
+
     .description .input-text {
       font-size: 18px;
     }
-    .description .submit-btn{
+
+    .description .submit-btn {
       font-size: 18px;
     }
   }
 }
 
+// Desktop display.
 @media (min-width: 1024px) {
   header {
-    .logo img{
-        height: 600px;
-      }
-      h1{
-        font-size: 60px;
-      }
-    .description p{
-      font-size: 25px;
+    .logo img {
+      height: 600px;
     }
+    h1 {
+      font-size: 60px;
+    }
+	  .description p {
+	    font-size: 25px;
+	  }
     .description .input-text {
       font-size: 20px;
       padding: 10px;
     }
-    .description .submit-btn{
+    .description .submit-btn {
       font-size: 20px;
       padding: 11px;
     }

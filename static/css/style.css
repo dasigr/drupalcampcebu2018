@@ -1,15 +1,8 @@
-/* Fonts. */
-/* Colors. */
-/* Background colors. */
-/*Hover color */
-/* Base font size. */
-/* Convert pixels to ems. */
-/* SASS file for global changes. */
 h1, h2, h3, h4, h5 {
   font-family: Merriweather, serif; }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5;
   text-align: center;
   margin-bottom: 30px;
   font-weight: bold; }
@@ -22,37 +15,122 @@ p {
 
 @media (min-width: 1024px) {
   h1 {
-    font-size: 3.75em; } }
+    font-size: 3.75; } }
 
-/* SASS file for form. */
 form {
   font-family: Open Sans, sans-serif; }
   form .form-wrapper {
     padding-left: 0;
     padding-right: 0; }
-    form .form-wrapper .col-xs-8,
-    form .form-wrapper .col-xs-4 {
+    form .form-wrapper .col-8,
+    form .form-wrapper .col-4 {
       padding-left: 0;
       padding-right: 0; }
-    form .form-wrapper .col-xs-8 {
+    form .form-wrapper .col-8 {
       text-align: left; }
     form .form-wrapper .input-text {
       font-size: 16px;
-      border: 1px solid #b97a47;
+      border: 1px solid #cd853f;
       padding: 6px;
       width: 95%; }
     form .form-wrapper .submit-btn {
       font-size: 16px;
-      background: #b97a47;
-      color: #ffffff;
+      background: #cd853f;
+      color: #fff;
       border: none;
       padding: 7px;
-      width: 100%; }
+      width: 100%;
+      float: right; }
     form .form-wrapper .submit-btn:hover {
       background-color: #b07337;
       color: #000; }
 
-/* SASS file for header. */
+header .sitename-wrapper {
+  border-bottom: 0.2px solid #e6e6fa; }
+  header .sitename-wrapper .desktop-menu {
+    display: none; }
+  header .sitename-wrapper .text-logo {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 15px 0 22px 0;
+    font-family: Open Sans, sans-serif;
+    padding-top: 4px;
+    margin-left: 5px; }
+    header .sitename-wrapper .text-logo a {
+      font-size: 28px;
+      font-weight: bold;
+      color: #39aade;
+      text-decoration: none; }
+    header .sitename-wrapper .text-logo .text-logo-second {
+      color: #cd853f;
+      padding: 0; }
+  header .sitename-wrapper span {
+    margin-top: 17px;
+    padding-left: 27px; }
+  header .sitename-wrapper .menu-wrapper {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #39aade;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+    text-align: center; }
+    header .sitename-wrapper .menu-wrapper .close-button {
+      font-size: 45px;
+      float: right;
+      padding: 0px; }
+      header .sitename-wrapper .menu-wrapper .close-button a {
+        text-decoration: none;
+        color: #fff; }
+    header .sitename-wrapper .menu-wrapper ul.menu-list {
+      list-style-type: none;
+      display: block;
+      font-size: 25px;
+      text-align: left;
+      padding: 0px;
+      margin-top: 80px;
+      margin-bottom: 0;
+      width: 100%;
+      text-transform: capitalize; }
+      header .sitename-wrapper .menu-wrapper ul.menu-list a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Open Sans, sans-serif;
+        display: block;
+        padding: 7px;
+        padding-left: 40px;
+        padding-bottom: 10px; }
+      header .sitename-wrapper .menu-wrapper ul.menu-list a:hover {
+        color: #fff; }
+      header .sitename-wrapper .menu-wrapper ul.menu-list li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      header .sitename-wrapper .menu-wrapper ul.menu-list li:hover {
+        background-color: rgba(255, 255, 255, 0.2); }
+    header .sitename-wrapper .menu-wrapper .register-button {
+      text-transform: capitalize; }
+      header .sitename-wrapper .menu-wrapper .register-button a {
+        font-size: 25px;
+        font-family: Open Sans, sans-serif;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        background-color: #cd853f;
+        padding: 8px;
+        padding-right: 60px;
+        padding-left: 60px;
+        border-color: #cd853f; }
+      header .sitename-wrapper .menu-wrapper .register-button a:hover {
+        color: #fff;
+        background-color: #b07337; }
+  header .sitename-wrapper .mobile-menu {
+    width: 100%; }
+    header .sitename-wrapper .mobile-menu span.hamburger {
+      float: right; }
+
 header .logo {
   text-align: center;
   margin-top: 40px; }
@@ -63,12 +141,22 @@ header .description {
   margin-top: 40px; }
 
 @media (min-width: 640px) {
+  header .sitename-wrapper .desktop-menu {
+    display: none; }
+  header .sitename-wrapper span {
+    padding-left: 40px; }
   header .logo img {
     height: 400px; }
   header .description p {
     font-size: 18px; } }
 
 @media (min-width: 768px) {
+  header .sitename-wrapper .menu-wrapper .close-button {
+    padding-left: 30px; }
+  header .sitename-wrapper .desktop-menu {
+    display: none; }
+  header .sitename-wrapper span {
+    padding-left: 60px; }
   header .logo img {
     height: 500px; }
   header h1 {
@@ -82,7 +170,32 @@ header .description {
     font-size: 15px;
     padding: 9px; } }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
+  header .sitename-wrapper .mobile-menu {
+    display: none; }
+  header .sitename-wrapper .desktop-menu {
+    display: block; }
+    header .sitename-wrapper .desktop-menu ul.menu-list {
+      list-style-type: none;
+      text-transform: capitalize;
+      float: right; }
+      header .sitename-wrapper .desktop-menu ul.menu-list li {
+        display: inline-block;
+        padding-right: 30px;
+        padding-top: 27PX; }
+        header .sitename-wrapper .desktop-menu ul.menu-list li a {
+          font-family: Open Sans, sans-serif;
+          color: #323648;
+          font-size: 19px; }
+        header .sitename-wrapper .desktop-menu ul.menu-list li a:hover {
+          text-decoration: none;
+          color: #cd853f; }
+      header .sitename-wrapper .desktop-menu ul.menu-list li.register-button {
+        border: 0.5px solid #cd853f;
+        text-align: center;
+        padding: 10px;
+        padding-right: 15px;
+        padding-left: 15px; }
   header .logo img {
     height: 550px; }
   header h1 {

@@ -1,56 +1,85 @@
 <!DOCTYPE html>
 <html lang = "en">
-<head>
- <meta charset="utf-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Drupalcamp Cebu 2018</title>
-
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans" rel="stylesheet">
- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
- <meta property="og:url" content="" />
- <meta property="og:title" content="Drupalcamp Cebu 2018" />
- <meta property="og:description" content="Drupalcamp Cebu is a one day conference about Web development with sessions about Drupal, DevOPS, UI/UX and Business." />
- <meta property="og:image" content="" />
-</head>
-   <body>
-     <header>
+  <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Drupalcamp Cebu 2018</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="script/mobile-menu.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans" rel="stylesheet">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <meta property="og:url" content="" />
+   <meta property="og:title" content="Drupalcamp Cebu 2018" />
+   <meta property="og:description" content="Drupalcamp Cebu is a one day conference about Web development with sessions about Drupal, DevOPS, UI/UX and Business." />
+   <meta property="og:image" content="images/Drupalcampcebu2017.jpg" />
+  </head>
+  <body>
+    <header>
+      <div class="sitename-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="text-logo-container col-10 col-sm-7 col-md-5">
+              <div class="text-logo"><a href="/">Drupalcamp <span class="text-logo-second">cebu</span></a></div>
+            </div>
+            <div class="mobile-menu col-2 col-sm-5 col-md-7">
+              <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              <div id="side-navigation" class="menu-wrapper" >
+                <div class="close-button col-2 col-sm-3 col-md-2"><a href="javascript:void(0)" onclick="closeNav()">&times;</a></div>
+                  <ul class="menu-list col-12 col-md-12">
+                    <li class="menu-margin-top"><a href="#">venue</a></li>
+                    <li><a href="#">sponsors</a></li>
+                    <li><a href="#">pricing</a></li><br><br>
+                  </ul>
+                <div class="register-button col-12"><a href="#">register</a></div>
+              </div>
+            </div>
+            <div class="desktop-menu col-md-7">
+              <div class="ds-menu-wrapper" >
+                <ul class="menu-list">
+                  <li><a href="#">venue</a></li>
+                  <li><a href="#">sponsors</a></li>
+                  <li><a href="#">pricing</a></li>
+                  <li class="register-button"><a href="#">register</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="logo">
+              <img src="images/Official_logo.jpg">
+            </div>
+          </div>
+        <div class="description  col-lg-6">
+          <div class="col-12 col-sm-12 col-md-12">
+            <h1>Conference about Open Source</h1>
+              <p>The 5th edition of the Drupalcamp Cebu is in the making. We will plan exciting sessions and tasks about the Drupal, PHP, DevOPS, UX and more. To recieve the news about the event before everyone else, subscribe to our news letter below.</p>
+            <form>
+              <div class="form-wrapper col-12">
+                <input type="text" placeholder="Email address" class="input-text col-7">&emsp;
+                <input type="submit" value="Submit" class="submit-btn col-4">
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </header>
+      <section class ="content">
        <div class="container">
-           <div class="row">
-               <div class="col-sm-6">
-                   <div class="logo">
-                     <img src="images/Official_logo.jpg">
-                   </div>
-               </div>
-               <div class="description">
-                 <div class="col-sm-6">
-                   <h1>Conference about Open Source</h1>
-                    <p>The 5th edition of the Drupalcamp Cebu is in the making. We will plan exciting sessions and tasks about the Drupal, PHP, DevOPS, UX and more. To recieve the news about the event before everyone else, subscribe to our news letter below.</p>
-                    <form>
-                      <div class="form-wrapper col-xs-12">
-                        <div class="col-xs-8"><input type="text" placeholder="Email address" class="input-text"></div>
-                        <div class="col-xs-4"><input type="submit" value="Submit" class="submit-btn"></div>
-                      </div>
-                    </form>
-                 </div>
-               </div>
-             </div>
-     </header>
-     <section class ="content">
-       <div class="container">
-           <div class="row">
-
-         </div>
+          <div class="row">
+          </div>
        </div>
-     </section>
-     <footer>
-       <div class="container">
-           <div class="row">
-         </div>
-       </div>
+      </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+        </div>
+      </div>
     </footer>
-   </body>
+  </body>
 </html>

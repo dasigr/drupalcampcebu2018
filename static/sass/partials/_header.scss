@@ -107,20 +107,23 @@ header {
       }
     }
 
-    .mobile-menu{
+    .mobile-menu {
       width: 100%;
       span.hamburger{
         float: right;
+        font-size: 30px;
+        cursor: pointer;
       }
     }
   }
 
   .logo {
-    text-align: center;
-    margin-top: 40px;
-    img {
-      height: 350px;
-    }
+    margin: auto;
+    margin-top: 50px;
+    width:353px;
+    height:530px;  
+    background:url("../images/Official_logo.jpg");
+    @include image-2x("../images/Official_logo2x.jpg", 353px, 530px);
   }
 
   .description {  
@@ -138,10 +141,6 @@ header {
       span {
         padding-left: 40px;
       }
-    }
-
-    .logo img {
-      height: 400px;
     }
 
     .description p {
@@ -165,10 +164,6 @@ header {
       span {
         padding-left: 60px;
       }
-    }
-
-    .logo img {
-      height: 500px;
     }
 
     h1 {
@@ -231,10 +226,6 @@ header {
       }
     }
 
-    .logo img {
-      height: 550px;
-    }
-
     h1 {
       font-size: 50px;
     }
@@ -256,9 +247,6 @@ header {
 // Desktop display.
 @media (min-width: 1024px) {
   header {
-    .logo img {
-      height: 600px;
-    }
     h1 {
       font-size: 60px;
     }

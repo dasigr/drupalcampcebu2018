@@ -170,7 +170,9 @@ header .sitename-wrapper {
   header .sitename-wrapper .mobile-menu {
     width: 100%; }
     header .sitename-wrapper .mobile-menu span.hamburger {
-      float: right; }
+      float: right;
+      font-size: 30px;
+      cursor: pointer; }
 
 header .logo {
   margin: auto;

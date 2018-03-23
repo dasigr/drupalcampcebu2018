@@ -1,0 +1,41 @@
+.content-wrapper{
+  background-color: $secondary-bg;
+  img{
+    width: 35%;
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  h4{
+    text-align: center;
+  }
+
+  .button{
+    text-align: center;
+    .sponsor-button{
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: bold;
+      font-family: $text-font;
+      color: $secondary-color;
+      border: 1px solid $secondary-color;;
+      border-radius: 10px;
+      border-color: $secondary-color;
+      padding: 20px;
+      background-color: transparent;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .sponsors-image{
+    text-align: center;
+  }
+}

@@ -36,19 +36,6 @@ p {
   h1 {
     font-size: 3.75em; } }
 
-/*<div class="map">
-    <div class="map-responsive">
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.597639108888!2d123.87922241442327!3d10.293967427854406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99c015a4bf233%3A0x95d783198f4634f8!2sCebu+Institute+of+Technology+-+University!5e0!3m2!1sen!2sph!4v1521721132774" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="DrupalTwitterHeader">
-      <div class="col-6">
-      <p> @DrupalCampCebu Announcing Drupalcamp's keynote: @JohnAlbin ! More information on https://2017.drupalcebu.org</p>
-      <p> @DrupalCampCebu Planning a trip to South East Asia in November? Join the fun in Cebu! #drupal #drupical #travel</p>
-      <p> @DrupalCampCebu Drupalcamp Cebu 2017 on 25 Nov., Have you heard ? https://groups.drupal.org/node/517132</p>
-      </div>
-    </div>
-    */
 form {
   font-family: Open Sans, sans-serif; }
   form .form-wrapper {
@@ -77,8 +64,7 @@ form {
       background-color: #b07337;
       color: #000; }
 
-<<<<<<< HEAD
-content {
+.content {
   padding-top: 40px; }
 
 .content-wrapper {
@@ -89,7 +75,8 @@ content {
     margin-bottom: 15px;
     font-weight: bolder; }
   .content-wrapper .sponsor-region p {
-    text-align: center; }
+    text-align: center;
+    text-align: left; }
   .content-wrapper .sponsor-region .link-btn {
     text-align: center;
     margin: 70px;
@@ -99,6 +86,7 @@ content {
   .content-wrapper .sponsor-region .sponsors-image {
     text-align: center;
     margin-bottom: 50px; }
+
 .map {
   padding-left: 0px;
   padding-right: 0px; }

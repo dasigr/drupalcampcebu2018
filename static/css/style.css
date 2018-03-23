@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5 {
   font-family: Merriweather, serif; }
 
 h1 {
-  font-size: 2.5;
+  font-size: 2.5em;
   text-align: center;
   margin-bottom: 30px;
   font-weight: bold; }
@@ -15,8 +15,21 @@ p {
 
 @media (min-width: 1024px) {
   h1 {
-    font-size: 3.75; } }
+    font-size: 3.75em; } }
 
+/*<div class="map">
+    <div class="map-responsive">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.597639108888!2d123.87922241442327!3d10.293967427854406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99c015a4bf233%3A0x95d783198f4634f8!2sCebu+Institute+of+Technology+-+University!5e0!3m2!1sen!2sph!4v1521721132774" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="DrupalTwitterHeader">
+      <div class="col-6">
+      <p> @DrupalCampCebu Announcing Drupalcamp's keynote: @JohnAlbin ! More information on https://2017.drupalcebu.org</p>
+      <p> @DrupalCampCebu Planning a trip to South East Asia in November? Join the fun in Cebu! #drupal #drupical #travel</p>
+      <p> @DrupalCampCebu Drupalcamp Cebu 2017 on 25 Nov., Have you heard ? https://groups.drupal.org/node/517132</p>
+      </div>
+    </div>
+    */
 form {
   font-family: Open Sans, sans-serif; }
   form .form-wrapper {
@@ -44,6 +57,117 @@ form {
     form .form-wrapper .submit-btn:hover {
       background-color: #b07337;
       color: #000; }
+
+.map {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.map iframe {
+  padding-right: 0px; }
+
+.footer-top .row {
+  background: #51a3d6;
+  margin-top: 40px;
+  padding-right: 0px; }
+
+.col-12 {
+  padding-right: 0px;
+  padding-left: 0px; }
+
+.col-lg-3 {
+  margin-top: 60px;
+  color: #fff; }
+
+a {
+  text-decoration: underline;
+  color: #fff; }
+
+a:hover {
+  color: #fff; }
+
+p {
+  font-size: 12px;
+  font-family: Open Sans, sans-serif;
+  text-align: left; }
+
+.drupalcebu_header {
+  padding-left: 20px; }
+
+.button-link a {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.button-link a:hover {
+  background: #fff;
+  color: #51a3d6; }
+
+.drupaltwitter_header {
+  margin-right: 20px;
+  padding-left: 0px; }
+
+.col-lg-6 {
+  width: 100%;
+  margin-bottom: -6px;
+  padding-right: 0px; }
+
+h3 {
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 20px; }
+
+.footer-bottom .row {
+  background: #0f457b;
+  text-align: center; }
+  .footer-bottom .row p {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 200;
+    margin: 0 0 10px;
+    text-align: center;
+    color: #fff; }
+  .footer-bottom .row p.copyright {
+    margin-bottom: 40px; }
+  .footer-bottom .row img {
+    width: 70px;
+    margin-bottom: 30px;
+    margin-top: 40px; }
+
+@media (max-width: 1024px) {
+  .map iframe {
+    width: 100%; } }
+
+@media (min-width: 1024px) {
+  .map iframe {
+    width: 100%; } }
+
+@media (max-width: 992px) {
+  .drupalcebu_header {
+    margin-top: -30px;
+    padding-left: 100px; }
+  .drupaltwitter_header {
+    margin-top: -40px;
+    margin-bottom: 40px;
+    padding-left: 100px; } }
+
+@media (max-width: 768px) {
+  .drupaltwitter_header {
+    margin-top: -40px;
+    margin-bottom: 40px;
+    padding-left: 30px; }
+  .drupalcebu_header {
+    padding-left: 30px; } }
+
+@media (max-width: 480px) {
+  .drupaltwitter_header {
+    margin-top: -40px;
+    margin-bottom: 40px;
+    padding-left: 5px; }
+  .drupalcebu_header {
+    padding-left: 5px; } }
 
 header .sitename-wrapper {
   border-bottom: 0.2px solid #e6e6fa; }
